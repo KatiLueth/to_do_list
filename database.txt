@@ -1,0 +1,25 @@
+-- Table: public.tasks
+
+-- DROP TABLE public.tasks;
+
+CREATE TABLE public.tasks
+(
+  id integer NOT NULL DEFAULT nextval('tasks_id_seq'::regclass),
+  task character varying(300) NOT NULL,
+  goal_time time without time zone NOT NULL DEFAULT ('now'::text)::time without time zone,
+  goal_date date NOT NULL DEFAULT now(),
+  complete boolean,
+  CONSTRAINT tasks_pkey PRIMARY KEY (id)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.tasks
+  OWNER TO katilueth;
+
+
+
+
+
+/////////// Andy:    npm install reset.css --save  // installs the meyerweb CSS reset
+                     npm install normalize.css --save // installs to the normalize 'reset'

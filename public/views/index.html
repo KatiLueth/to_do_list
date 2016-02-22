@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>toDoList</title>
+    <script type="text/javascript" src="/vendors/jquery.min.js"></script>
+    <script type="text/javascript" src="/scripts/clientapp.js"></script>
+    <link rel="stylesheet" type="text/css" href="/styles/stylesheet.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,900' rel='stylesheet' type='text/css'></head>
+</head>
+
+
+<body>
+<header>
+    <nav id="upper">
+        <ul>
+            <li><a>TA-DAH!</a>
+                <!--<p>Celebrating the magic of getting shit done.</p>-->
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Blog</a></li>
+            <li><button id="logIn">Log In</button></li>
+            <li><button id="join">Join Free</button></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="page">
+    <h1>TA-DAH!</h1>
+    <h3>What would you like to accomplish?</h3>
+
+    <form id="task-assigner">
+
+        <label for="new_task"></label>
+        <input type="text" placeholder="Task" id="new_task" name="new_task" /><br>
+
+        <label for="do_by_time"></label>
+        <input type="time" placeholder="Time" id="do_by_time" name="do_by_time" /><br>
+
+        <label for="do_by_date"></label>
+        <input type="date" placeholder="Date" id="do_by_date" name="do_by_date" /><br>
+
+        <button type="submit"  id="do-button" >ADD</button>
+    </form>
+</div>
+<main class="lists">
+    <section class="do-list">
+        <h3>TO-DO</h3>
+    </section>
+
+    <section class="done-list">
+        <h3>TA-DAH!</h3>
+    </section>
+</main>
+
+
+<footer>
+
+</footer>
+</body>
+</html>
